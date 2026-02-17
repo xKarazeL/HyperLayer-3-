@@ -7,8 +7,8 @@
 
 **Author:** xKarazeL  
 **Contact:** firataydinozcan@gmail.com  
-**Version:** 1.0  
-**Date:** February 2024  
+**Version:** 1.4  
+**Date:** February 2025  
 **Status:** Initial Release
 
 ---
@@ -1338,10 +1338,10 @@ Special thanks to the pioneers of post-quantum cryptography, Byzantine Fault Tol
 
 This whitepaper is for informational purposes only and does not constitute financial, investment, or legal advice. The HyperLayer Protocol is under active development, and specifications are subject to change.
 
-**Copyright © 2024 xKarazeL. All rights reserved.**
+**Copyright © 2025 xKarazeL. All rights reserved.**
 
 ---
 
 **HyperLayer Protocol: Redefining Blockchain Infrastructure**
 
-*Version 1.0 | February 2024*
+*Version 1.4 | February 2025*
