@@ -1,0 +1,19 @@
+# Compiled files
+*.o
+*.exe
+hyperlayer
+
+# IDE
+.vscode/
+.idea/
+
+# Build
+build/
+dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip

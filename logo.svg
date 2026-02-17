@@ -1,0 +1,108 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a3e;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="quantumGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="strongGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="200" cy="200" r="195" fill="url(#bgGrad)"/>
+  
+  <!-- Main design -->
+  <g transform="translate(200, 200)">
+    <!-- Outer ring -->
+    <circle r="160" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.2"/>
+    <circle r="150" fill="none" stroke="#00d4ff" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Layer representations -->
+    <!-- Layer 1 - Outer -->
+    <polygon points="0,-130 113,-65 113,65 0,130 -113,65 -113,-65" 
+             fill="none" stroke="#404040" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+    
+    <!-- Layer 2 - Middle -->
+    <polygon points="0,-95 82,-48 82,48 0,95 -82,48 -82,-48" 
+             fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Layer 3 - Inner (HyperLayer) -->
+    <polygon points="0,-65 56,-33 56,33 0,65 -56,33 -56,-33" 
+             fill="url(#hexGrad)" stroke="#00ff88" stroke-width="3" filter="url(#glow)" opacity="0.9"/>
+    
+    <!-- Quantum nodes -->
+    <g>
+      <!-- Orbiting quantum particles -->
+      <circle cx="0" cy="-110" r="5" fill="#00ff88" filter="url(#strongGlow)">
+        <animateTransform attributeName="transform" type="rotate" 
+                          from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="95" cy="-55" r="5" fill="#00d4ff" filter="url(#strongGlow)">
+        <animateTransform attributeName="transform" type="rotate" 
+                          from="120 0 0" to="480 0 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="95" cy="55" r="5" fill="#a855f7" filter="url(#strongGlow)">
+        <animateTransform attributeName="transform" type="rotate" 
+                          from="240 0 0" to="600 0 0" dur="8s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    
+    <!-- Central emblem -->
+    <g>
+      <!-- "H" letter -->
+      <text x="0" y="15" font-family="'Helvetica Neue', Arial, sans-serif" 
+            font-size="90" font-weight="900" fill="url(#quantumGrad)" 
+            text-anchor="middle" filter="url(#glow)">H</text>
+      
+      <!-- Layer 3 badge -->
+      <circle cx="30" cy="-15" r="18" fill="#1a1a3e" stroke="#00ff88" stroke-width="2"/>
+      <text x="30" y="-8" font-family="Arial, sans-serif" font-size="16" 
+            font-weight="bold" fill="#00ff88" text-anchor="middle">3</text>
+    </g>
+    
+    <!-- Connection lines (representing network) -->
+    <g opacity="0.3">
+      <line x1="0" y1="-65" x2="0" y2="-95" stroke="#00d4ff" stroke-width="1"/>
+      <line x1="56" y1="-33" x2="82" y2="-48" stroke="#00d4ff" stroke-width="1"/>
+      <line x1="56" y1="33" x2="82" y2="48" stroke="#00d4ff" stroke-width="1"/>
+      <line x1="0" y1="65" x2="0" y2="95" stroke="#00d4ff" stroke-width="1"/>
+      <line x1="-56" y1="33" x2="-82" y2="48" stroke="#00d4ff" stroke-width="1"/>
+      <line x1="-56" y1="-33" x2="-82" y2="-48" stroke="#00d4ff" stroke-width="1"/>
+    </g>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="355" font-family="'Helvetica Neue', Arial, sans-serif" 
+        font-size="36" font-weight="900" fill="#ffffff" text-anchor="middle" 
+        letter-spacing="2">HYPERLAYER</text>
+  
+  <text x="200" y="378" font-family="'Helvetica Neue', Arial, sans-serif" 
+        font-size="12" fill="#00d4ff" text-anchor="middle" letter-spacing="1">
+    QUANTUM-READY BLOCKCHAIN
+  </text>
+</svg>
