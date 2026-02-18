@@ -336,7 +336,7 @@ We welcome contributions from the community! Please read our [Contributing Guide
 
 ## 📄 License
 
-Copyright (c) 2024 xKarazeL - All Rights Reserved
+Copyright (c) 2025 xKarazeL - All Rights Reserved
 
 This is proprietary software. Unauthorized copying, modification, distribution, or use is strictly prohibited without explicit written permission.
 
