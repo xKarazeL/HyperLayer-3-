@@ -1,5 +1,5 @@
 # HyperLayer Protocol
-## Technical Whitepaper v1.0
+## Technical Whitepaper v1.4
 
 **Revolutionizing Blockchain Infrastructure with Quantum-Ready Layer 3 Technology**
 
